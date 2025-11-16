@@ -21,38 +21,51 @@
             width: 100px;
         }
 
-        .caja {
-            box-shadow: 5px 5px 5px red;
-            width: 33.3%;
-            display: inline-block;
+        .contenedor-parrafos {
+            display: flex;
+            gap: 20px;
         }
 
-        .col2 {
-            text-align: center;
-        }
-
-        .col3 {
-            float: right;
-            margin-top: 10px;
-            
+        .contenedor-parrafos p {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 10px;
         }
 
         .cara {
-            background: yellow;
-            border-radius: 100%;
             width: 200px;
             height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
             position: relative;
         }
 
-        .cara .ojo {
-            background: red;
-            border-radius: 100%;
-            width: 10px;
-            height: 10px;
+        .ojo {
+            width: 25px;
+            height: 35px;
+            background-color: black;
+            border-radius: 50%;
             position: absolute;
             top: 60px;
-            left: 40px;
+        }
+
+        .ojo-izquierdo {
+            left: 50px;
+        }
+
+        .ojo-derecho {
+            right: 50px;
+        }
+
+        .boca {
+            width: 100px;
+            height: 50px;
+            border-bottom: 7px solid black;
+            border-radius: 0 0 50px 50px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
@@ -76,27 +89,29 @@
         facilis esse quis totam, fugiat nostrum dignissimos facere tempore ratione repellendus, ipsum saepe. Explicabo,
         quidem veritatis!</p>
 
-    <div class="caja col1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam molestias itaque. Omnis nesciunt
-            eligendi repellendus deserunt aliquid possimus laboriosam molestiae odit sunt similique? Praesentium sed
-            excepturi voluptatibus fugit officia?</p>
-    </div>
-
-    <div class="caja col2">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta alias nulla qui nesciunt obcaecati! Cumque
-            dicta, laborum quisquam, voluptas repellendus sequi exercitationem fuga maiores ea, delectus nesciunt
-            perspiciatis rerum nostrum.</p>
-    </div>
-
-    <div class="caja col3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum quia
-        necessitatibus
-        libero aperiam hic ullam voluptate quibusdam doloremque reiciendis? Laboriosam provident itaque ipsam
-        aspernatur, ex eveniet corrupti accusantium eos.
+    <div class="contenedor-parrafos">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, excepturi? Beatae dicta, quia, aut nesciunt
+            itaque, omnis eveniet dignissimos consectetur quis reprehenderit corporis adipisci quaerat repellendus
+            laudantium quas ad eius.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum alias fuga nisi consequatur aperiam atque
+            optio asperiores sequi et recusandae harum a error, cumque repellat, quaerat, veritatis tempora ea eos.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima officia officiis id praesentium harum
+            facere voluptates, quam veniam asperiores illum placeat. Porro cupiditate aperiam commodi veniam blanditiis
+            animi molestias!
+        </p>
     </div>
 
     <br><br>
     <div class="cara">
-        <div class="ojo"></div>
+        <div class="ojo ojo-izquierdo"></div>
+        <div class="ojo ojo-derecho"></div>
+        <div class="boca"></div>
+    </div>
 </body>
 
 </html>
