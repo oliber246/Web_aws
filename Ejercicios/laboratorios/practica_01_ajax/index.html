@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 01 - AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-4">
+    <div class="container">
+        <h2>Gestión con AJAX (Sin recargar)</h2>
+
+        <div class="card p-3 mb-3">
+            <form id="formPersona">
+                <input type="text" name="nombres" class="form-control mb-2" placeholder="Nombres" required>
+                <input type="text" name="apellidos" class="form-control mb-2" placeholder="Apellidos" required>
+                <button type="submit" class="btn btn-primary">Guardar vía AJAX</button>
+            </form>
+        </div>
+
+        <button id="btnConsultar" class="btn btn-success mb-3">Consultar Datos (JSON)</button>
+        <div id="respuesta" class="alert alert-secondary">Aquí aparecerán los datos...</div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // 1. Guardar
+            $('#formPersona').submit(function (e) {
+                e.preventDefault();
+                $.post('procesar.php', $(this).serialize(), function (data) {
+                    alert(data);
+                    $('#formPersona')[0].reset();
+                    consultar(); // Actualizar lista auto
+                });
+            });
+
+            // 2. Consultar
+            $('#btnConsultar').click(function () {
+                consultar();
+            });
+
+            function consultar() {
+                $.ajax({
+                    url: 'consultar.php',
+                    dataType: 'json',
+                    success: function (data) {
+                        let html = "<ul class='list-group'>";
+                        data.forEach(p => {
+                            html += `<li class='list-group-item'>${p[1]} ${p[2]}</li>`;
+                        });
+                        html += "</ul>";
+                        $('#respuesta').html(html);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
