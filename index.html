@@ -7,14 +7,13 @@
     <title>Curriculum Vitae Profesional</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <div class="contenedor-curriculum">
 
 
-        <!-- ========== ENCABEZADO PROFESIONAL ========== -->
         <header class="encabezado-profesional">
             <div class="fila-encabezado">
                 <div class="contenedor-foto-profesional">
@@ -46,7 +45,6 @@
             </div>
         </header>
 
-        <!-- ========== PERFIL PROFESIONAL ========== -->
         <section class="seccion-perfil">
             <div class="contenedor-perfil">
                 <h2 class="titulo-perfil">
@@ -66,7 +64,6 @@
             </div>
         </section>
 
-        <!-- ========== PROYECTOS Y TRABAJOS ========== -->
         <section class="seccion-proyectos">
             <h2 class="titulo-seccion-mayor">
                 <i class="bi bi-kanban-fill"></i>
@@ -191,7 +188,6 @@
             </div>
         </section>
 
-        <!-- ========== EJERCICIOS PRÁCTICOS ========== -->
         <section class="seccion-ejercicios">
             <h2 class="titulo-seccion-mayor">
                 <i class="bi bi-code-square"></i>
@@ -218,9 +214,13 @@
                         <span>JavaScript</span>
                         <span class="contador-ejercicios">6</span>
                     </button>
+                    <button class="boton-pestana" onclick="cambiarPestana(event, 'backend')">
+                        <i class="bi bi-server"></i>
+                        <span>Backend</span>
+                        <span class="contador-ejercicios">4</span>
+                    </button>
                 </div>
 
-                <!-- Contenido Pestaña HTML -->
                 <div id="html" class="contenido-pestana activa">
                     <ul class="lista-ejercicios-mejorada">
                         <li class="item-ejercicio-mejorado">
@@ -252,7 +252,6 @@
                     </ul>
                 </div>
 
-                <!-- Contenido Pestaña CSS -->
                 <div id="css" class="contenido-pestana">
                     <ul class="lista-ejercicios-mejorada">
                         <li class="item-ejercicio-mejorado">
@@ -336,7 +335,6 @@
                     </ul>
                 </div>
 
-                <!-- Contenido Pestaña JavaScript -->
                 <div id="javascript" class="contenido-pestana">
                     <ul class="lista-ejercicios-mejorada">
                         <li class="item-ejercicio-mejorado">
@@ -419,67 +417,127 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <!-- Contenido Pestaña JavaScript -->
-            <div id="bootstrap" class="contenido-pestana">
-                <ul class="lista-ejercicios-mejorada">
-                    <li class="item-ejercicio-mejorado">
-                        <a href="Ejercicios/BOOTSTRAP/boot01.html" class="enlace-ejercicio-mejorado">
-                            <div class="contenido-ejercicio">
-                                <div class="icono-ejercicio">
-                                    <i class="bi bi-file-code"></i>
+
+                <div id="backend" class="contenido-pestana">
+                    <ul class="lista-ejercicios-mejorada">
+                        <li class="item-ejercicio-mejorado">
+                            <a href="laboratorios/practica_01_ajax/index.html" target="_blank"
+                                class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-database-fill"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Práctica 01: AJAX y MySQL
+                                    </span>
                                 </div>
-                                <span class="texto-ejercicio-mejorado">
-                                    Ejercicio 01
-                                </span>
-                            </div>
-                            <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
-                        </a>
-                    </li>
-                    <li class="item-ejercicio-mejorado">
-                        <a href="Ejercicios/BOOTSTRAP/boot02.html" class="enlace-ejercicio-mejorado">
-                            <div class="contenido-ejercicio">
-                                <div class="icono-ejercicio">
-                                    <i class="bi bi-file-code"></i>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="laboratorios/practica_02_js_sql/index.html" target="_blank"
+                                class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-hdd-network-fill"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Práctica 02: WebSQL Local
+                                    </span>
                                 </div>
-                                <span class="texto-ejercicio-mejorado">
-                                    Ejercicio 02
-                                </span>
-                            </div>
-                            <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
-                        </a>
-                    </li>
-                    <li class="item-ejercicio-mejorado">
-                        <a href="Ejercicios/BOOTSTRAP/boot03.html" class="enlace-ejercicio-mejorado">
-                            <div class="contenido-ejercicio">
-                                <div class="icono-ejercicio">
-                                    <i class="bi bi-file-code"></i>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="laboratorios/practica_03_crud/public/" target="_blank"
+                                class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-fire"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Práctica 03: CRUD CodeIgniter 4
+                                    </span>
                                 </div>
-                                <span class="texto-ejercicio-mejorado">
-                                    Ejercicio 03
-                                </span>
-                            </div>
-                            <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
-                        </a>
-                    </li>
-                    <li class="item-ejercicio-mejorado">
-                        <a href="Ejercicios/BOOTSTRAP/boot04.html" class="enlace-ejercicio-mejorado">
-                            <div class="contenido-ejercicio">
-                                <div class="icono-ejercicio">
-                                    <i class="bi bi-file-code"></i>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="laboratorios/practica_04_reportes/index.php" target="_blank"
+                                class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-file-earmark-bar-graph-fill"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Práctica 04: Reportes y Gráficos
+                                    </span>
                                 </div>
-                                <span class="texto-ejercicio-mejorado">
-                                    Ejercicio 04
-                                </span>
-                            </div>
-                            <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
-                        </a>
-                    </li>
-                </ul>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="bootstrap" class="contenido-pestana">
+                    <ul class="lista-ejercicios-mejorada">
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/BOOTSTRAP/boot01.html" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-file-code"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Ejercicio 01
+                                    </span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/BOOTSTRAP/boot02.html" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-file-code"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Ejercicio 02
+                                    </span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/BOOTSTRAP/boot03.html" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-file-code"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Ejercicio 03
+                                    </span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/BOOTSTRAP/boot04.html" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio">
+                                        <i class="bi bi-file-code"></i>
+                                    </div>
+                                    <span class="texto-ejercicio-mejorado">
+                                        Ejercicio 04
+                                    </span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- ========== PIE DE PÁGINA ========== -->
         <footer class="pie-pagina-profesional">
             <div class="contenido-pie">
                 <h5 class="titulo-pie-pagina">Portafolio Académico - Desarrollo Web</h5>
