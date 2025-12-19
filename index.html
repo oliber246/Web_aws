@@ -93,7 +93,8 @@
                                 <strong>Desplegado en AWS EC2 (Linux).</strong>
                             </p>
                             <div class="contenedor-etiquetas">
-                                <span class="etiqueta-tech" style="background: #ef4223; color: white;">CodeIgniter 4</span>
+                                <span class="etiqueta-tech" style="background: #ef4223; color: white;">CodeIgniter
+                                    4</span>
                                 <span class="etiqueta-tech" style="background: #ff9900; color: white;">AWS</span>
                                 <span class="etiqueta-tech" style="background: #00758f; color: white;">MySQL</span>
                             </div>
@@ -119,7 +120,8 @@
                             </p>
                             <div class="contenedor-etiquetas">
                                 <span class="etiqueta-tech" style="background: #264de4; color: white;">HTML</span>
-                                <span class="etiqueta-tech" style="background: #e8f0fe; color: #1a73e8;">Maquetación</span>
+                                <span class="etiqueta-tech"
+                                    style="background: #e8f0fe; color: #1a73e8;">Maquetación</span>
                             </div>
                         </div>
                         <div class="pie-tarjeta">
@@ -211,6 +213,13 @@
                         <span>JavaScript</span>
                         <span class="contador-ejercicios">6</span>
                     </button>
+
+                    <button class="boton-pestana" onclick="cambiarPestana(event, 'php')">
+                        <i class="bi bi-filetype-php"></i>
+                        <span>PHP</span>
+                        <span class="contador-ejercicios">4</span>
+                    </button>
+
                     <button class="boton-pestana" onclick="cambiarPestana(event, 'backend')">
                         <i class="bi bi-server"></i>
                         <span>Backend</span>
@@ -359,10 +368,52 @@
                     </ul>
                 </div>
 
+                <div id="php" class="contenido-pestana">
+                    <ul class="lista-ejercicios-mejorada">
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/PHP/contenido1.php" target="_blank" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio"><i class="bi bi-layout-text-window-reverse"></i></div>
+                                    <span class="texto-ejercicio-mejorado">Contenido Modular 1</span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/PHP/contenido2.php" target="_blank" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio"><i class="bi bi-layout-text-window-reverse"></i></div>
+                                    <span class="texto-ejercicio-mejorado">Contenido Modular 2</span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/PHP/contenido3.php" target="_blank" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio"><i class="bi bi-layout-text-window-reverse"></i></div>
+                                    <span class="texto-ejercicio-mejorado">Contenido Modular 3</span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                        <li class="item-ejercicio-mejorado">
+                            <a href="Ejercicios/PHP/contenido4.php" target="_blank" class="enlace-ejercicio-mejorado">
+                                <div class="contenido-ejercicio">
+                                    <div class="icono-ejercicio"><i class="bi bi-layout-text-window-reverse"></i></div>
+                                    <span class="texto-ejercicio-mejorado">Contenido Modular 4</span>
+                                </div>
+                                <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div id="backend" class="contenido-pestana">
                     <ul class="lista-ejercicios-mejorada">
                         <li class="item-ejercicio-mejorado">
-                            <a href="Ejercicios/laboratorios/practica_01_ajax/index.html" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_01_ajax/index.html" target="_blank"
+                                class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-database-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 01: AJAX y MySQL</span>
@@ -370,9 +421,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
-                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="Ejercicios/laboratorios/practica_02_js_sql/index.html" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_02_js_sql/index.html" target="_blank"
+                                class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-hdd-network-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 02: WebSQL Local</span>
@@ -380,9 +431,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
-                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="Ejercicios/laboratorios/practica_03_crud/public/" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_03_crud/public/" target="_blank"
+                                class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-fire"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 03: CRUD CodeIgniter 4</span>
@@ -390,9 +441,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
-                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="Ejercicios/laboratorios/practica_04_reportes/index.php" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_04_reportes/index.php" target="_blank"
+                                class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-file-earmark-bar-graph-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 04: Reportes y Gráficos</span>
