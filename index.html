@@ -362,7 +362,7 @@
                 <div id="backend" class="contenido-pestana">
                     <ul class="lista-ejercicios-mejorada">
                         <li class="item-ejercicio-mejorado">
-                            <a href="laboratorios/practica_01_ajax/index.html" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_01_ajax/index.html" target="_blank" class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-database-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 01: AJAX y MySQL</span>
@@ -370,8 +370,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
+                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="laboratorios/practica_02_js_sql/index.html" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_02_js_sql/index.html" target="_blank" class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-hdd-network-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 02: WebSQL Local</span>
@@ -379,8 +380,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
+                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="laboratorios/practica_03_crud/public/" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_03_crud/public/" target="_blank" class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-fire"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 03: CRUD CodeIgniter 4</span>
@@ -388,8 +390,9 @@
                                 <i class="bi bi-arrow-right-circle icono-flecha-ejercicio"></i>
                             </a>
                         </li>
+                        
                         <li class="item-ejercicio-mejorado">
-                            <a href="laboratorios/practica_04_reportes/index.php" target="_blank" class="enlace-ejercicio-mejorado">
+                            <a href="Ejercicios/laboratorios/practica_04_reportes/index.php" target="_blank" class="enlace-ejercicio-mejorado">
                                 <div class="contenido-ejercicio">
                                     <div class="icono-ejercicio"><i class="bi bi-file-earmark-bar-graph-fill"></i></div>
                                     <span class="texto-ejercicio-mejorado">Práctica 04: Reportes y Gráficos</span>
@@ -428,24 +431,18 @@
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Función para cambiar entre pestañas
         function cambiarPestana(evento, idPestana) {
-            // Ocultar todo el contenido de pestañas
             const contenidosPestanas = document.querySelectorAll('.contenido-pestana');
             contenidosPestanas.forEach(contenido => {
                 contenido.classList.remove('activa');
             });
 
-            // Remover clase activa de todos los botones
             const botonesPestanas = document.querySelectorAll('.boton-pestana');
             botonesPestanas.forEach(boton => {
                 boton.classList.remove('activa');
             });
 
-            // Mostrar el contenido de la pestaña seleccionada
             document.getElementById(idPestana).classList.add('activa');
-
-            // Agregar clase activa al botón clickeado
             evento.currentTarget.classList.add('activa');
         }
     </script>
